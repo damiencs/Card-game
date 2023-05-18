@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomepageModule } from './features/homepage/homepage.module';
 import { HeaderModule } from './features/header/header.module';
 import { FooterModule } from './features/footer/footer.module';
-import { BodyModule } from './features/body/body.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -14,7 +13,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BodyModule,
+    HomepageModule,
     HeaderModule,
     FooterModule,
     BrowserAnimationsModule,

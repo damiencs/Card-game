@@ -1,0 +1,20 @@
+.ripples {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.red-ripple {
+  cursor: pointer;
+  text-align: center;
+
+  width: 300px;
+  height: 300px;
+  margin-right: 0px;
+}
+.black-ripple {
+  cursor: pointer;
+  text-align: center;
+  margin-right: 0px;
+  width: 100px;
+  height: 300px;
+}

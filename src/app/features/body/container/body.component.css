@@ -1,0 +1,29 @@
+.container {
+  background-image: url("/assets/Images/backgrounds.jpg");
+  background-size: 100% 100%;
+
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 400px);
+  max-height: calc(100vh - 400px);
+  display: flex;
+  justify-content: center;
+}
+ul {
+  list-style-type: none;
+  margin-top: 40px;
+  padding-left: 0%;
+  text-align: center;
+}
+#startBtn {
+  margin-top: 100px;
+  font-size: 40px;
+  width: 250px;
+  height: 90px;
+}
+#menu {
+  margin-top: 50px;
+  font-size: 90px;
+}
+#menu-icon {
+  size: 100px;
+}

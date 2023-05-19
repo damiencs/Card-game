@@ -19,6 +19,20 @@ const routes: Routes = [
             (m) => m.FirstGuessModule
           ),
       },
+      {
+        path: 'second',
+        loadChildren: () =>
+          import('./features/secondGuess/secondGuess.module').then(
+            (m) => m.SecondGuessModule
+          ),
+      },
+      {
+        path: 'third',
+        loadChildren: () =>
+          import('./features/thirdGuess/thirdGuess.module').then(
+            (m) => m.ThirdGuessModule
+          ),
+      },
     ],
   },
 ];

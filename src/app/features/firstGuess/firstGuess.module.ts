@@ -4,6 +4,8 @@ import { FirstGuessComponent } from './container/firstGuess.component';
 import { FirstGuessRoutingModule } from './firstGuess-routing.module';
 import { MatRippleModule } from '@angular/material/core';
 import { MatDialogModule } from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [FirstGuessComponent],
@@ -12,6 +14,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     FirstGuessRoutingModule,
     MatRippleModule,
     MatDialogModule,
+    HttpClientModule,
   ],
   exports: [FirstGuessComponent],
   providers: [],

@@ -7,6 +7,7 @@ import { HeaderModule } from './features/header/header.module';
 import { FooterModule } from './features/footer/footer.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,8 +19,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FooterModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
+    HttpClientModule,
   ],
   providers: [],
+  
   bootstrap: [AppComponent],
 })
 export class AppModule {}

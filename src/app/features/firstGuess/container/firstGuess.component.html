@@ -2,7 +2,7 @@
   <p>Guess the color of the next card!</p>
   <p>Choose:</p>
   <div class="ripples">
-    <span
+    <span (click)="btnClick(red)"
       class="red-ripple mat-elevation-z4"
       matRipple
       [matRippleCentered]="centered"
@@ -12,7 +12,7 @@
     >
       Red
     </span>
-    <span
+    <span (click)="btnClick(black)"
       class="black-ripple mat-elevation-z4"
       matRipple
       [matRippleCentered]="centered"

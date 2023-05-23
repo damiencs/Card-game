@@ -1,24 +1,26 @@
 .second-container {
   font-family: fantasy;
-  background-image: url("/assets/Images/double_king.jpg");
+  background-image: url("/assets/Images/thirdGuess.jpg");
   min-height: calc(100vh - 600px);
   max-height: calc(100vh - 600px);
-  margin-top: 0px;
+  padding: 0px;
 }
 
 #guess-second {
+  color: rgba(255, 255, 255, 255);
   font-size: 35px;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 90px;
 }
 
 #choose-second {
+  color: rgba(255, 255, 255, 255);
   font-size: 25px;
   margin-bottom: 50px;
 }
 ul {
   list-style-type: none;
-  margin-top: 40px;
+  margin-top: 10px;
   padding-left: 0%;
   text-align: center;
 }

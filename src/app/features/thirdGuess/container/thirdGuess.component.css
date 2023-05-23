@@ -6,7 +6,6 @@
   font-family: fantasy;
   min-height: calc(100vh - 400px);
   max-height: calc(100vh - 400px);
-  color: rgba(255, 255, 255, 0);
 }
 
 .third-container ul {

@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { DrawDeckModel } from 'src/app/models/drawDeck.model';
 import { cardService } from 'src/app/services/card.service';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
-import { DialogSuccess } from '../../../dialog/dialogSuccess/dialogSuccess.component';
 import { DialogFailure } from 'src/app/dialog/dialogFailure/dialogFailure.component';
 import { CardModel } from 'src/app/models/card.model';
 
@@ -33,8 +32,8 @@ export class ThirdGuessComponent {
 
   btnClick(suit: string) {
     let new_card: CardModel[] = [];
-    let enterAnimationDuration: string = '3000ms';
-    let exitAnimationDuration: string = '1500ms';
+    let enterAnimationDuration: string = '1000ms';
+    let exitAnimationDuration: string = '500ms';
 
     this.cardService.drawCard(this.currentDeck.deck_id).subscribe((data) => {
       new_card = data.cards;

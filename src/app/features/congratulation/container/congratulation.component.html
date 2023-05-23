@@ -1,6 +1,18 @@
 <div class="congrats-container">
-  <p>Congratulations!</p>
-  <button mat-fab extended color="primary" (click)="restartGame()">
-    Restart
-  </button>
+  <ul>
+    <li>
+      <p id="congrats">Congratulations!</p>
+    </li>
+    <li>
+      <button
+        class="restartBtn"
+        mat-fab
+        extended
+        color="primary"
+        (click)="restartGame()"
+      >
+        Restart
+      </button>
+    </li>
+  </ul>
 </div>

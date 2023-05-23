@@ -22,7 +22,7 @@ ul {
   flex-direction: row;
 }
 .red-ripple {
-  margin-left: 300px;
+  margin-left: 250px;
   border-radius: 25px;
   cursor: pointer;
   text-align: center;
@@ -32,7 +32,7 @@ ul {
   height: 65px;
 }
 .black-ripple {
-  margin-left: 160px;
+  margin-left: 150px;
   border-radius: 25px;
   cursor: pointer;
   text-align: center;
@@ -53,9 +53,11 @@ ul {
 
 #king {
   max-width: 400px;
+  max-height: 500px;
   padding: 5px;
 }
 #queen {
   max-width: 400px;
+  max-height: 500px;
   padding: 5px;
 }

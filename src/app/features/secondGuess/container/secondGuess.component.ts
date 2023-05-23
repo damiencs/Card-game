@@ -43,8 +43,8 @@ export class SecondGuessComponent {
 
   btnClick(answer: string) {
     let new_card: CardModel[] = [];
-    let enterAnimationDuration: string = '3000ms';
-    let exitAnimationDuration: string = '1500ms';
+    let enterAnimationDuration: string = '1000ms';
+    let exitAnimationDuration: string = '500ms';
 
     this.cardService.drawCard(this.currentDeck.deck_id).subscribe((data) => {
       new_card = data.cards;

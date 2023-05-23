@@ -2,8 +2,8 @@
   background-size: 100% 100%;
   background-color: #cccccc;
   background-repeat: no-repeat;
-  min-height: calc(100vh - 400px);
-  max-height: calc(100vh - 400px);
+  min-height: calc(100vh -100px);
+  max-height: calc(100vh - 100px);
   display: flex;
   justify-content: center;
   font-family: fantasy;

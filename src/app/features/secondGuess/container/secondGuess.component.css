@@ -1,8 +1,8 @@
 .second-container {
   font-family: fantasy;
   background-image: url("/assets/Images/thirdGuess.jpg");
-  min-height: calc(100vh - 600px);
-  max-height: calc(100vh - 600px);
+  min-height: calc(100vh - 300px);
+  max-height: calc(100vh - 300px);
   padding: 0px;
 }
 

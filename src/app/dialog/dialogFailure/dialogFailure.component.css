@@ -1,0 +1,10 @@
+.dialogFail-container {
+  font-family: fantasy;
+}
+
+#dialogRestartBtn {
+  height: 40px;
+  border-radius: 5px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}

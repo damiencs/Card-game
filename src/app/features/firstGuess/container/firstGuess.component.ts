@@ -50,7 +50,7 @@ export class FirstGuessComponent {
         (card[0].suit == 'SPADES' || card[0].suit == 'CLUBS')
       ) {
         this.dialog.open(DialogSuccess, {
-          width: '250px',
+          width: '300px',
           enterAnimationDuration,
           exitAnimationDuration,
           data: { showFirstButton: true },
@@ -60,14 +60,14 @@ export class FirstGuessComponent {
         (card[0].suit == 'HEARTS' || card[0].suit == 'DIAMOND')
       ) {
         this.dialog.open(DialogSuccess, {
-          width: '250px',
+          width: '300px',
           enterAnimationDuration,
           exitAnimationDuration,
           data: { showFirstButton: true },
         });
       } else {
         this.dialog.open(DialogFailure, {
-          width: '250px',
+          width: '300px',
           enterAnimationDuration,
           exitAnimationDuration,
         });

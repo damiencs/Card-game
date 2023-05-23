@@ -1,7 +1,7 @@
 .congrats-container {
   background-image: url(/assets/Images/double_king.jpg);
-  min-height: calc(100vh - 600px);
-  max-height: calc(100vh - 600px);
+  min-height: calc(100vh - 200px);
+  max-height: calc(100vh - 200px);
   font-family: fantasy;
   text-align: center;
 }

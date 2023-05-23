@@ -1,9 +1,9 @@
 <h1 mat-dialog-title>Correct!</h1>
 
 <div>
-  <button mat-button mat-dialog-close (click)="restartGame()">Restart</button>
   <div *ngIf="data.showFirstButton">
     <button
+      class="continueBtn"
       mat-button
       mat-dialog-close
       cdkFocusInitial
@@ -14,6 +14,7 @@
   </div>
   <div *ngIf="!data.showFirstButton">
     <button
+      class="continueBtn"
       mat-button
       mat-dialog-close
       cdkFocusInitial

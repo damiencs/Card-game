@@ -1,7 +1,7 @@
 .container {
   background-image: url("/assets/Images/backgrounds.jpg");
   background-size: 100% 100%;
-
+  font-family: fantasy;
   background-repeat: no-repeat;
   min-height: calc(100vh - 400px);
   max-height: calc(100vh - 400px);

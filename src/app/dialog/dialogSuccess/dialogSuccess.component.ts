@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'dialogSuccess',
   templateUrl: 'dialogSuccess.component.html',
+  styleUrls: ['./dialogSuccess.component.css'],
 })
 export class DialogSuccess {
   isFirstOpened: boolean;

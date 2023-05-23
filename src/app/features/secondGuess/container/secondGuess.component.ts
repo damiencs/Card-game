@@ -54,14 +54,14 @@ export class SecondGuessComponent {
           this.convertCardValue(this.firstCard.value)
         ) {
           this.dialog.open(DialogSuccess, {
-            width: '250px',
+            width: '300px',
             enterAnimationDuration,
             exitAnimationDuration,
             data: { showFirstButton: true },
           });
         } else {
           this.dialog.open(DialogFailure, {
-            width: '250px',
+            width: '300px',
             enterAnimationDuration,
             exitAnimationDuration,
           });
@@ -72,14 +72,14 @@ export class SecondGuessComponent {
           this.convertCardValue(this.firstCard.value)
         ) {
           this.dialog.open(DialogSuccess, {
-            width: '250px',
+            width: '300px',
             enterAnimationDuration,
             exitAnimationDuration,
             data: { showFirstButton: false },
           });
         } else {
           this.dialog.open(DialogFailure, {
-            width: '250px',
+            width: '300px',
             enterAnimationDuration,
             exitAnimationDuration,
           });
@@ -90,21 +90,21 @@ export class SecondGuessComponent {
           this.convertCardValue(this.firstCard.value)
         ) {
           this.dialog.open(DialogSuccess, {
-            width: '250px',
+            width: '300px',
             enterAnimationDuration,
             exitAnimationDuration,
             data: { showFirstButton: false },
           });
         } else {
           this.dialog.open(DialogFailure, {
-            width: '250px',
+            width: '300px',
             enterAnimationDuration,
             exitAnimationDuration,
           });
         }
       } else {
         this.dialog.open(DialogFailure, {
-          width: '250px',
+          width: '300px',
           enterAnimationDuration,
           exitAnimationDuration,
         });

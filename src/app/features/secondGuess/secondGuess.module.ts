@@ -4,6 +4,8 @@ import { SecondGuessComponent } from './container/secondGuess.component';
 import { SecondGuessRoutingModule } from './secondGuess-routing.module';
 import { MatRippleModule } from '@angular/material/core';
 import { MatDialogModule } from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [SecondGuessComponent],
@@ -12,6 +14,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     SecondGuessRoutingModule,
     MatRippleModule,
     MatDialogModule,
+    MatButtonModule,
+    SharedModule,
   ],
   exports: [SecondGuessComponent],
   providers: [],

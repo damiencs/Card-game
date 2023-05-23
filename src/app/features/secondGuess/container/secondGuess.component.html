@@ -1,1 +1,44 @@
-<p>second</p>
+<div class="second-container">
+  <ul>
+    <li>
+      <p id="guess-second">
+        Guess if the next card will be higher, lower or equal to the first card!
+      </p>
+    </li>
+    <li><p id="choose-second">Choose:</p></li>
+
+    <li>
+      <button
+        class="higherBtn"
+        mat-fab
+        extended
+        color="primary"
+        (click)="btnClick(higher)"
+      >
+        Higher
+      </button>
+    </li>
+    <li>
+      <button
+        class="equalBtn"
+        mat-fab
+        extended
+        color="primary"
+        (click)="btnClick(equal)"
+      >
+        Equal
+      </button>
+    </li>
+    <li>
+      <button
+        class="lowerBtn"
+        mat-fab
+        extended
+        color="primary"
+        (click)="btnClick(lower)"
+      >
+        Lower
+      </button>
+    </li>
+  </ul>
+</div>

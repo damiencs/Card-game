@@ -1,1 +1,23 @@
-<p>third</p>
+<div class="third-container">
+  <ul>
+    <li id="third-guess"><p>Guess the suit of the next card!</p></li>
+    <li id="third-choose"><p>Choose:</p></li>
+  </ul>
+
+  <table class="table">
+    <tr>
+      <td></td>
+      <td (click)="btnClick(club)" class="suit clubs-cell"><span></span></td>
+      <td (click)="btnClick(spade)" class="suit spades-cell"><span></span></td>
+      <td></td>
+    </tr>
+    <tr class="second-row">
+      <td (click)="btnClick(diamond)" class="suit diamond-cell">
+        <span></span>
+      </td>
+      <td></td>
+      <td></td>
+      <td (click)="btnClick(heart)" class="suit heart-cell"><span></span></td>
+    </tr>
+  </table>
+</div>

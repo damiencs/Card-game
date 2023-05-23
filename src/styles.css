@@ -1,6 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import url(./app/features/body/container/body.component.css);
-@import url(./app/features/firstGuess/container/firstGuess.component.css);
 
 html,
 body {

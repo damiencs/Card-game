@@ -1,29 +1,39 @@
 <div class="first-container">
-  <p>Guess the color of the next card!</p>
-  <p>Choose:</p>
-  <div class="ripples">
-    <span (click)="btnClick(red)"
-      class="red-ripple mat-elevation-z4"
-      matRipple
-      [matRippleCentered]="centered"
-      [matRippleDisabled]="disabled"
-      [matRippleUnbounded]="unbounded"
-      [matRippleColor]="red"
-    >
-      Red
-    </span>
-    <span (click)="btnClick(black)"
-      class="black-ripple mat-elevation-z4"
-      matRipple
-      [matRippleCentered]="centered"
-      [matRippleDisabled]="disabled"
-      [matRippleUnbounded]="unbounded"
-      [matRippleColor]="black"
-      j
-    >
-      Black
-    </span>
-  </div>
-
-  <button type="button" (click)="clickView()">test</button>
+  <ul>
+    <li><p id="title-color">Guess the color of the next card!</p></li>
+    <li><p id="choose-color">Choose:</p></li>
+    <li>
+      <div class="ripples">
+        <span
+          (click)="btnClick(black)"
+          class="black-ripple mat-elevation-z4"
+          matRipple
+          [matRippleCentered]="centered"
+          [matRippleDisabled]="disabled"
+          [matRippleUnbounded]="unbounded"
+          [matRippleColor]="black"
+          j
+        >
+          Black </span
+        ><span
+          (click)="btnClick(red)"
+          class="red-ripple mat-elevation-z4"
+          matRipple
+          [matRippleCentered]="centered"
+          [matRippleDisabled]="disabled"
+          [matRippleUnbounded]="unbounded"
+          [matRippleColor]="red"
+        >
+          Red
+        </span>
+      </div>
+    </li>
+    <li>
+      <img id="king" src="/assets/Images/blackKing.jpg" /><img
+        id="queen"
+        src="/assets/Images/redQueen (1).jpg"
+      />
+    </li>
+    <li></li>
+  </ul>
 </div>

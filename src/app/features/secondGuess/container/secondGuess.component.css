@@ -1,0 +1,31 @@
+.second-container {
+  font-family: fantasy;
+  background-image: url("/assets/Images/double_king.jpg");
+  min-height: calc(100vh - 600px);
+  max-height: calc(100vh - 600px);
+  margin-top: 0px;
+}
+
+#guess-second {
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 90px;
+}
+
+#choose-second {
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+ul {
+  list-style-type: none;
+  margin-top: 40px;
+  padding-left: 0%;
+  text-align: center;
+}
+
+.higherBtn {
+  margin-bottom: 30px;
+}
+.equalBtn {
+  margin-bottom: 30px;
+}

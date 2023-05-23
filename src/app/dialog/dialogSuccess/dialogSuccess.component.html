@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>Correct!</h1>
+
+<div>
+  <button mat-button mat-dialog-close (click)="restartGame()">Restart</button>
+  <div *ngIf="data.showFirstButton">
+    <button
+      mat-button
+      mat-dialog-close
+      cdkFocusInitial
+      (click)="routeToSecondPage()"
+    >
+      Continue
+    </button>
+  </div>
+  <div *ngIf="!data.showFirstButton">
+    <button
+      mat-button
+      mat-dialog-close
+      cdkFocusInitial
+      (click)="routeToThirdPage()"
+    >
+      Continue
+    </button>
+  </div>
+</div>

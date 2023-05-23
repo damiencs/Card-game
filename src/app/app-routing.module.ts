@@ -33,6 +33,13 @@ const routes: Routes = [
             (m) => m.ThirdGuessModule
           ),
       },
+      {
+        path: 'congratulation',
+        loadChildren: () =>
+          import('./features/congratulation/congratulation.module').then(
+            (m) => m.CongratulationModule
+          ),
+      },
     ],
   },
 ];

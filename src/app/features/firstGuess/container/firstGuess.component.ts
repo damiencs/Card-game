@@ -5,7 +5,9 @@ import { DeckModel } from 'src/app/models/deck.model';
 import { DrawDeckModel } from 'src/app/models/drawDeck.model';
 import { CardModel } from 'src/app/models/card.model';
 import { MatDialog, MatDialogRef, } from '@angular/material/dialog';
-import { DialogSuccess } from './dialog/dialog.component';
+import { DialogSuccess } from '../../../dialog/dialogSuccess/dialogSuccess.component';
+import { DialogFailure } from 'src/app/dialog/dialogFailure/dialogFailure.component';
+
 
 @Component({
   selector: 'app-firstGuess',
@@ -18,7 +20,6 @@ export class FirstGuessComponent {
   constructor(private router: Router, private cardService:cardService, private dialog:MatDialog) {
     this.cardService.getDeck().subscribe(data=>{
       this.deckObj = data;
-      console.log(this.deckObj);
     });
   }
 
@@ -39,28 +40,32 @@ export class FirstGuessComponent {
     let enterAnimationDuration:string = "3000ms";
     let exitAnimationDuration:string = "1500ms";
 
-    this.cardService.drawCard(this.deckObj.deck_id).subscribe(data=>{
-      card = data.cards;
-      console.log(card[0].suit=="SPADES");
+    this.cardService.drawCard(this.deckObj.deck_id).subscribe(res=>{
+      card = res.cards;
+      this.cardService.sendCurrentDeck(res);
       if(color == "black"&&(card[0].suit == "SPADES"|| card[0].suit == "CLUBS")){
         this.dialog.open(DialogSuccess, {
           width: '250px',
           enterAnimationDuration,
           exitAnimationDuration,
+          data:{showFirstButton: true},
         });
       }else if(color == "red"&&(card[0].suit == "HEARTS"|| card[0].suit == "DIAMOND")){
         this.dialog.open(DialogSuccess, {
           width: '250px',
           enterAnimationDuration,
           exitAnimationDuration,
+          data:{showFirstButton: true},
         });
       }else{
-        this.dialog.open(DialogSuccess, {
+        this.dialog.open(DialogFailure, {
           width: '250px',
           enterAnimationDuration,
           exitAnimationDuration,
         });
       }
+      
+      
     });
 
     
